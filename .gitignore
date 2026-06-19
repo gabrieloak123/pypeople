@@ -6,7 +6,6 @@ build/
 .ruff_cache/
 .html_cov/
 .coverage
-.python-version
 dist/
 wheels/
 *.egg-info
