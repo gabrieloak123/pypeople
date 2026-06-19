@@ -1,5 +1,5 @@
 # Python-generated files
-__pycache__/
+src/pythando/__pycache__/
 *.py[oc]
 build/
 .pytest_cache/
