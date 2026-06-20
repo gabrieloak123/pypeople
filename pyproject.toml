@@ -19,8 +19,9 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-pythonpath = ['.']
 addopts = ['-p no:warnings', '--cov=src', '--cov-context=test']
+pythonpath = ["src"]
+testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 80
@@ -48,4 +49,5 @@ test = "pytest -s -x -vv"
 post_test = "coverage html --show-contexts"
 
 [tool.basedpyright]
-include = ["src"]
+include = ["src", "tests"]
+extraPaths = ["src"]
