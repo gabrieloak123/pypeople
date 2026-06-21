@@ -20,7 +20,7 @@ Instale as dependências:
 uv sync
 ```
 
-Crie um arquivo `.env` com os seguinte campo:
+Crie um arquivo `.env` com o seguinte campo:
 ```bash
 DATABASE_URL="sqlite:///database.db"
 ```
