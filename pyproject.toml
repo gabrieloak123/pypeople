@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14,<4.0"
 dependencies = [
+    "alembic>=1.18.4",
     "fastapi[standard]>=0.137.2",
+    "pydantic-settings>=2.14.1",
+    "sqlalchemy>=2.0.51",
     "uvicorn>=0.49.0",
 ]
 
@@ -20,7 +23,7 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-addopts = ['-p no:warnings', '--cov=src', '--cov-context=test']
+addopts = ['-p', 'no:warnings', '--cov=src', '--cov-context=test', '--cov-branch', '--random-order']
 pythonpath = ["src"]
 testpaths = ["tests"]
 
@@ -52,3 +55,6 @@ post_test = "coverage html --show-contexts"
 [tool.basedpyright]
 include = ["src", "tests"]
 extraPaths = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pythando"]
