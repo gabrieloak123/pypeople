@@ -3,13 +3,12 @@ from datetime import datetime
 
 import pytest
 from fastapi.testclient import TestClient
+from pypeople.app import app
+from pypeople.database import get_session
+from pypeople.models import User, table_registry
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import Session
 from sqlalchemy.pool import StaticPool
-
-from pythando.app import app
-from pythando.database import get_session
-from pythando.models import User, table_registry
 
 
 @pytest.fixture

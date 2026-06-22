@@ -1,6 +1,6 @@
 from http import HTTPStatus
 
-from pythando.schemas import UserPublic
+from pypeople.schemas import UserPublic
 
 
 # ====================

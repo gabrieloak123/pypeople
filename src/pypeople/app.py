@@ -5,9 +5,9 @@ from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from pythando.database import get_session
-from pythando.models import User
-from pythando.schemas import Message, UserList, UserPublic, UserSchema
+from pypeople.database import get_session
+from pypeople.models import User
+from pypeople.schemas import Message, UserList, UserPublic, UserSchema
 
 app = FastAPI()
 

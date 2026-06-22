@@ -1,5 +1,5 @@
 [project]
-name = "pythando"
+name = "pypeople"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -47,7 +47,7 @@ pre_lint = "typos"
 lint = "ruff check"
 pre_format = "ruff check --fix"
 format = "ruff format"
-run = "fastapi dev src/pythando/app.py"
+run = "fastapi dev src/pypeople/app.py"
 pre_test = "task lint"
 test = "pytest -s -x -vv"
 post_test = "coverage html --show-contexts"
@@ -57,4 +57,4 @@ include = ["src", "tests"]
 extraPaths = ["src"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pythando"]
+packages = ["src/pypeople"]
