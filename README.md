@@ -1,4 +1,4 @@
-# FastAPI CRUD
+# PyPeople
 
 Uma API RESTful desenvolvida com FastAPI para fins de estudo, utilizando SQLAlchemy para persistência de dados, Alembic para migrações e Pytest para testes automatizados.
 
